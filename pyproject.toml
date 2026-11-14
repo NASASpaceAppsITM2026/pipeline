@@ -1,0 +1,25 @@
+[project]
+name = "lunar-navigator-pipeline"
+version = "0.1.0"
+description = "Lunar navigation science pipeline: SPICE kernels, Chebyshev ephemeris fits, LOLA horizon masks, release packaging."
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.6.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["pipeline"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

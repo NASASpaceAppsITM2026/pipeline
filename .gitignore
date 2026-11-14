@@ -1,0 +1,14 @@
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+
+# Release artifacts (packed zips)
+*.zip
+
+# Environment / OS
+.DS_Store
+.env
