@@ -3,7 +3,10 @@ name = "lunar-navigator-pipeline"
 version = "0.1.0"
 description = "Lunar navigation science pipeline: SPICE kernels, Chebyshev ephemeris fits, LOLA horizon masks, release packaging."
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "numpy>=1.26.0",
+    "spiceypy>=8.0.0",
+]
 
 [build-system]
 requires = ["hatchling"]
